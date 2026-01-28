@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">54.54% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/11</span>
+                <span class='fraction'>11/11</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">54.54% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/11</span>
+                <span class='fraction'>11/11</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -133,7 +133,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -144,7 +144,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -155,7 +155,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -166,7 +166,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -177,7 +177,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
@@ -194,8 +194,8 @@
  * @param {object} req - Express request object
  * @param {object} res - Express response object
  */
-const getUsers = <span class="fstat-no" title="function not covered" >(r</span>eq, res) =&gt; {
-<span class="cstat-no" title="statement not covered" >	res.status(200).json({ message: "Get all users" });</span>
+const getUsers = (req, res) =&gt; {
+	res.status(200).json({ message: "Get all users" });
 };
 &nbsp;
 /**
@@ -205,8 +205,8 @@ const getUsers = <span class="fstat-no" title="function not covered" >(r</span>e
  * @param {object} req - Express request object
  * @param {object} res - Express response object
  */
-const getUser = <span class="fstat-no" title="function not covered" >(r</span>eq, res) =&gt; {
-<span class="cstat-no" title="statement not covered" >	res.status(200).json({ message: `Get user ${req.params.id}` });</span>
+const getUser = (req, res) =&gt; {
+	res.status(200).json({ message: `Get user ${req.params.id}` });
 };
 &nbsp;
 /**
@@ -216,8 +216,8 @@ const getUser = <span class="fstat-no" title="function not covered" >(r</span>eq
  * @param {object} req - Express request object
  * @param {object} res - Express response object
  */
-const createUser = <span class="fstat-no" title="function not covered" >(r</span>eq, res) =&gt; {
-<span class="cstat-no" title="statement not covered" >	res.status(201).json({ message: "Create user" });</span>
+const createUser = (req, res) =&gt; {
+	res.status(201).json({ message: "Create user" });
 };
 &nbsp;
 /**
@@ -227,8 +227,8 @@ const createUser = <span class="fstat-no" title="function not covered" >(r</span
  * @param {object} req - Express request object
  * @param {object} res - Express response object
  */
-const updateUser = <span class="fstat-no" title="function not covered" >(r</span>eq, res) =&gt; {
-<span class="cstat-no" title="statement not covered" >	res.status(200).json({ message: `Update user ${req.params.id}` });</span>
+const updateUser = (req, res) =&gt; {
+	res.status(200).json({ message: `Update user ${req.params.id}` });
 };
 &nbsp;
 /**
@@ -238,8 +238,8 @@ const updateUser = <span class="fstat-no" title="function not covered" >(r</span
  * @param {object} req - Express request object
  * @param {object} res - Express response object
  */
-const deleteUser = <span class="fstat-no" title="function not covered" >(r</span>eq, res) =&gt; {
-<span class="cstat-no" title="statement not covered" >	res.status(200).json({ message: `Delete user ${req.params.id}` });</span>
+const deleteUser = (req, res) =&gt; {
+	res.status(200).json({ message: `Delete user ${req.params.id}` });
 };
 &nbsp;
 module.exports = {
@@ -256,7 +256,7 @@ module.exports = {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-01-28T21:48:08.917Z
+                at 2026-01-28T21:51:57.537Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
